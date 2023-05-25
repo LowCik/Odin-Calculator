@@ -1,0 +1,12 @@
+body {
+	background-color: aqua;
+	min-width: 100%;
+	min-height: 100%;
+}
+div {
+	background-color: blue !important;
+    color: blueviolet;
+}
+div.screen{
+	background-color: orange;
+}
