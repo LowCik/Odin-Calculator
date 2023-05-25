@@ -1,12 +1,85 @@
 body {
-	background-color: aqua;
-	min-width: 100%;
-	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(134, 148, 140);
 }
-div {
-	background-color: blue !important;
-    color: blueviolet;
+.body {
+	display: flex;
 }
-div.screen{
+
+.whole-body {
+	box-shadow: 3px 3px rgb(78, 97, 92);
+	background-color: rgb(65, 83, 78);
+	border-radius: 8px;
+	min-width: 250px;
+	min-height: 250px;
+	max-width: px;
+	flex-flow: column;
+	gap: 30px;
+}
+
+div.screen {
+	border-radius: 3px;
+	border: rgb(81, 88, 84) 1px solid;
+	display: flex;
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-right: 8px;
+	font-size: 150%;
+	font-family: "Calculator";
+	flex: 1;
 	background-color: orange;
+	justify-content: flex-end;
+	color: rgb(17, 22, 21);
+}
+
+.bottom {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	margin-top: 8px;
+	height: 3em;
+}
+
+.pad {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(212, 115, 36);
+	border-radius: 1em;
+	flex: 1;
+	box-shadow: 1px 2px rgb(43, 54, 51);
+}
+
+#top-equal {
+	margin-bottom: -15px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	align-items: end;
+	font: bold;
+}
+#bottom-equal {
+	content-visibility: hidden;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0px;
+	min-width: 3em;
+	max-width: 3em;
+}
+
+.row5 {
+	display: flex;
+}
+#OneO {
+	flex-grow: 2;
+}
+#dot {
+	max-width: 2em;
 }
