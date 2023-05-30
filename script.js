@@ -1,7 +1,22 @@
-const arr = require("jshint/data/non-ascii-identifier-start");
 
-const toCalculate = document.getElementsByClassName("screen");
-console.log(toCalculate);
+const toCalculate = document.querySelector(".screen");
+console.log(toCalculate.textContent);
+
+const pads = document.querySelectorAll(".pad");
+
+const equalButtons = document.querySelectorAll('.equal');
+
+equalButtons.forEach(button => {
+    button.addEventListener('mouseover', () => {
+        equalButtons.forEach(button => button.classList.add('hovered'));
+    });
+
+    button.addEventListener('mouseout', () => {
+        equalButtons.forEach(button => button.classList.remove('hovered'));
+    });
+});
+
+
 
 const add = function (nb1, nb2) {
     return nb1 + nb2;
@@ -18,8 +33,8 @@ const sum = function (nb1) {
 const multiply = function (nb1 = 0, nb2 = 0) {
     return nb1 * nb2;
 }
-const power = function (nb1,nb2) {
-    return Math.pow(nb1,nb2);
+const power = function (nb1, nb2) {
+    return Math.pow(nb1, nb2);
 }
 
 function Calc() {

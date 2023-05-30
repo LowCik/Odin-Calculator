@@ -59,6 +59,10 @@ div.screen {
 	box-shadow: 1px 2px rgb(43, 54, 51);
 }
 
+.pad:hover {
+	background-color: rgb(230, 140, 60);
+}
+
 #top-equal {
 	margin-bottom: -15px;
 	border-bottom-left-radius: 0;
@@ -72,6 +76,9 @@ div.screen {
 	border-top-right-radius: 0px;
 	min-width: 3em;
 	max-width: 3em;
+}
+.equal.hovered {
+	background-color: rgb(230, 140, 60);
 }
 
 .row5 {
