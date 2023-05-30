@@ -4,6 +4,14 @@ console.log(toCalculate.textContent);
 
 const pads = document.querySelectorAll(".pad");
 
+pads.forEach(pad => {
+    pad.addEventListener('click', () => {
+        let newScreen = toCalculate.textContent.toString() + pad.textContent.toString();
+        console.log(newScreen);
+
+    })
+})
+
 const equalButtons = document.querySelectorAll('.equal');
 
 equalButtons.forEach(button => {

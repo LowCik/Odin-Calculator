@@ -20,6 +20,9 @@ body {
 }
 
 div.screen {
+	min-width: 1em;
+	min-height: 2em;
+	flex:1;
 	border-radius: 3px;
 	border: rgb(81, 88, 84) 1px solid;
 	display: flex;
@@ -29,7 +32,6 @@ div.screen {
 	padding-right: 8px;
 	font-size: 150%;
 	font-family: "Calculator";
-	flex: 1;
 	background-color: orange;
 	justify-content: flex-end;
 	color: rgb(17, 22, 21);
