@@ -63,6 +63,7 @@ div.screen {
 
 .pad:hover {
 	background-color: rgb(230, 140, 60);
+	box-shadow: 1px 1px rgb(43,54,51) inset;
 }
 
 #top-equal {
@@ -81,11 +82,10 @@ div.screen {
 }
 .equal.hovered {
 	background-color: rgb(230, 140, 60);
+	box-shadow: none;
+	box-shadow: 1px 0px rgb(43,54,51) inset;
 }
 
-.row5 {
-	display: flex;
-}
 #OneO {
 	flex-grow: 2;
 }
