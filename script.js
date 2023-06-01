@@ -6,9 +6,8 @@ const pads = document.querySelectorAll(".pad");
 
 pads.forEach(pad => {
     pad.addEventListener('click', () => {
-        let newScreen = toCalculate.innerText.concat(pad.textContent.toString());
-        console.log(newScreen);//devrais renvoyer le screen update avec la nouvelle touche
-        toCalculate.innerText=newScreen;
+        let newScreen = toCalculate.innerText.concat(pad.textContent.toString());// le screen update avec la nouvelle touche
+        toCalculate.innerText = newScreen;// enregistre la nouvelle valeur
     })
 })
 
@@ -22,8 +21,8 @@ equalButtons.forEach(button => {
     button.addEventListener('mouseout', () => {
         equalButtons.forEach(button => button.classList.remove('hovered'));
     });
-    button.addEventListener('click',()=>{
-        Calc(toCalculate.textContent.toString);// envoie ce qu'il y a inscrit dans le screen à Calc()
+    button.addEventListener('click', () => {
+        Calc(toCalculate.innerText);// envoie ce qu'il y a inscrit dans le screen à Calc()
     })
 });
 
@@ -48,14 +47,24 @@ const power = function (nb1, nb2) {
     return Math.pow(nb1, nb2);
 }
 
-function Calc(toCalculate) {
+function Calc(toCalc) {
 
     // parcourir la str a chaque signe "+-*/" split et stocker dans une array.
     // 
-for(indexInCalcul = 0;toCalculate[indexInCalcul];indexInCalcul++){
-    console.log('yo');// devrais envoyer yo x fois où x est égale a la lenght de toCalculate
-}
-    // va cherche le textContent et soit l'intègre dans une focntion qui existe deja (googler) soit :
+    console.log("yi");
+    //while sign présent alors boucler
+    while (toCalc.indexOf('+') ||
+        toCalc.indexOf('-') ||
+        toCalc.indexOf('/') ||
+        toCalc.indexOf('*')) {
+        for (indexInCalcul = 0; indexInCalcul < toCalculate.length; indexInCalcul++) {
+            console.log("yo");// envoi yo x fois où x est égale a la lenght de toCalculate
+
+
+        }
+    }
+    toCalculate.innerText = toCalc;
+    // va cherche le textContent:
     // le faire soit même : Parser, trouver le premier signe multiplication ou division, faire le calcul. refaire jusqu'a ce que l'on trouve plus de division.
     // puis dès que l'on trouve un signe, faire le calcul.
     // check list : droite ou gauche vide ? ==0 /!\ 4+-3 == 4+0=4 puis 4-3 == 1

@@ -60,6 +60,15 @@ div.screen {
 	flex: 1;
 	box-shadow: 1px 2px rgb(43, 54, 51);
 }
+.equal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(212, 115, 36);
+	border-radius: 1em;
+	flex: 1;
+	box-shadow: 1px 2px rgb(43, 54, 51);
+}
 
 .pad:hover {
 	background-color: rgb(230, 140, 60);
