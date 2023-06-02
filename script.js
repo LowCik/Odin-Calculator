@@ -47,16 +47,25 @@ const power = function (nb1, nb2) {
     return Math.pow(nb1, nb2);
 }
 
+function checkIfSign(char) {
+    if (char === '+' ||
+        char === '-') {
+        return 1;
+    }
+    else if (char === '/' ||
+        char === '*') {
+        return 2;
+    }
+        else return false;
+}
+
 function Calc(toCalc) {
 
     // parcourir la str a chaque signe "+-*/" split et stocker dans une array.
     // 
     console.log("yi");
     //while sign présent alors boucler
-    while (toCalc.indexOf('+') ||
-        toCalc.indexOf('-') ||
-        toCalc.indexOf('/') ||
-        toCalc.indexOf('*')) {
+    while (isNaN(toCalc))) {
         for (indexInCalcul = 0; indexInCalcul < toCalculate.length; indexInCalcul++) {
             console.log("yo");// envoi yo x fois où x est égale a la lenght de toCalculate
 
