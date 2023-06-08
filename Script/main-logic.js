@@ -38,8 +38,9 @@ function Calc(toCalc) {
     // 
     //while sign présent alors boucler
     while (isNaN(toCalc) && limit < 200) { // Si toCalc est NAN alors ça veux dire que le calcul n'est pas fini, dès que ça deviens !NaN ça sort de la boucle
-        checkStr(toCalc); // if 2 alors encore un * ou / if 1 alors encore un + ou -. Si un - est au début c'est un nombre alors on sort de la boucle principale.
-
+        if (checkStrSign(toCalc) === 3) { // if 2 alors encore un * ou / if 1 alors encore un + ou -. Si un - est au début c'est un nombre alors on sort de la boucle principale.
+            consol.log(toCalc.indexOf('/'));
+        }
         limit++;
     }
     console.log(numArr);
